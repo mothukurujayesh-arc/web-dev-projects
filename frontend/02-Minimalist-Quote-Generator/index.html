@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.svg"
+      type="image/x-icon"
+    />
+    <title>| Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-container">
+      <h1><span></span>ANTHOLOGY</h1>
+      <div class="copy-box">
+        <div class="copy-status">
+          <p><span id="count-status">01</span> / <i class="bi bi-infinity"></i></p>
+        </div>
+        <span>|</span>
+        <i class="bi bi-copy" id="copyIcon" title="Copy Quote & Author"></i>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="container">
+        <!-- The Quote -->
+        <i class="bi bi-quote"></i>
+        <blockquote class="quote-box">
+          <p id="quote-text">Simplicity is the ultimate sophistication.</p>
+        </blockquote>
+
+        <!-- The Author -->
+        <cite id="quote-author" class="auther"
+          ><span>—</span> Leonardo da Vinci <span>—</span></cite
+        >
+
+        <!-- The Action -->
+        <button id="new-quote-btn" class="newquote-btn" type="button">
+          New Quote
+          <i class="bi bi-arrow-repeat"></i>
+        </button>
+        <p class="action-hint">
+          Press <kbd class="">Space</kbd> or click button for new inspiration
+        </p>
+      </section>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="withApi.js"></script>
+  </body>
+</html>
